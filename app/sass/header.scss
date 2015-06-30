@@ -1,0 +1,38 @@
+.header-main {
+	height: $header_height;
+	background: #dae4ef;
+	background: linear-gradient(to right, #dae4ef, #f0f5f8, #dae4ef);
+}
+.header-logo {
+	float: left;
+	display: inline-block;
+	margin-top: 30px;
+}
+.header-contacts {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+}
+.header-contacts__phone {
+	display: inline-block;
+	color: #5c7b98;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 6px;
+	vertical-align: top;
+	text-decoration: none;
+}
+.header-contacts__prefix-phone {
+	display: inline-block;
+	color: #00b9fe;
+	font-size: 14px; font-weight: bold;
+	line-height: 18px;
+	vertical-align: top;
+}
+.header-contacts__emain {
+	display: block;
+}
+.header-contacts__emain-link {
+	font-size: 16px;
+	color: #613993;
+}

@@ -1,0 +1,94 @@
+.menu-link {
+	position: relative;
+	font-size: 14px;
+	color: #5c7b98;
+	background-color: #f7f7f7;
+	text-decoration: none;
+	/*transition: all .18s linear;*/
+	&:hover {
+		background-color: #dce6f0;
+	}
+	&.menu-link_active {
+		color: #fff;
+		background-color: #00b9fe;
+	}
+}
+
+// главное меню
+
+.menu-main-wrp {
+	position: relative;
+	margin: -20px 0 20px;
+}
+.menu-main {
+	list-style: none;
+	position: relative;
+	height: 40px;
+	margin: 0; padding: 0;
+	white-space: nowrap;
+	font-size: 0;
+	text-align: center;
+}
+.menu-main__item {
+	display: inline-block;
+	height: 40px;
+}
+.menu-main__link {
+	display: block;
+	height: 40px; line-height: 40px;
+	margin: 0 16px 0 0; padding: 0 10px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0; left: -16px;
+		width: 16px; height: 40px;
+		background: url('../img/menu-item-before.png') top center no-repeat;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0; right: -16px;
+		width: 16px; height: 40px;
+		background: url('../img/menu-item-after.png') top center no-repeat;
+	}
+	&:hover:before, &:hover:after {
+		background-position: 0 -40px;
+	}
+	&.menu-link_active:before, &.menu-link_active:after {
+		background-position: 0 -80px;
+	}
+}
+
+// меню в сайдбаре
+
+.menu-side, .menu-side__submenu {
+	margin: 0;
+	padding: 0;
+}
+.menu-side__item {
+	list-style: none;
+	&:last-child .menu-side__link {
+		border-bottom: none;
+	}
+}
+.menu-side__link {
+	position: relative;
+	display: block;
+	line-height: 16px;
+	padding: 6px 20px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dae1eb;
+}
+.menu-side__submenu-item {
+	list-style: none;
+}
+.menu-side__link_sub {
+	padding-left: 34px;
+}
+.menu-side__link_sub:before {
+	content: '';
+	position: absolute;
+	width: 7px; height: 9px;
+	left: 20px; top: 9px;
+	background: url('../img/icons.png') 0 0 no-repeat;
+}

@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru-RU")
+	include ../common/head.jade
+	body
+		.wrapper
+			.main
+				// Шапка
+				include ../common/header.jade
+				// Главное меню
+				include ../common/menu.jade
+
+				.container.cf
+					// Хлебные крошки
+					include ../common/breadclumbs.jade
+					// Левый сайдбар
+					include ../common/aside-left.jade
+					// Контент
+					.content
+						block content
+		// Подвал
+		include ../common/footer.jade

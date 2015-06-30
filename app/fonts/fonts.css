@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'ElektraLightPro';
+	src: url('ElektraLightPro.eot');
+	src: url('ElektraLightPro.eot?#iefix') format('embedded-opentype'),
+		 url('ElektraLightPro.woff') format('woff'),
+		 url('ElektraLightPro.ttf') format('truetype'),
+		 url('ElektraLightPro.svg#ElektraLightPro') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'ElektraMediumPro';
+	src: url('ElektraMediumPro.eot');
+	src: url('ElektraMediumPro.eot?#iefix') format('embedded-opentype'),
+		 url('ElektraMediumPro.woff') format('woff'),
+		 url('ElektraMediumPro.ttf') format('truetype'),
+		 url('ElektraMediumPro.svg#ElektraMediumPro') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}

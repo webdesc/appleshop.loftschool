@@ -1,0 +1,42 @@
+$text-color: #5c7b98;
+$link-color: #00b9fe;
+$header_height: 120px;
+$footer_height: 240px;
+$width-sidebar: 230px;
+$margin-content: $width-sidebar + 34px;
+
+* { box-sizing: border-box; }
+
+html {
+	position: relative;
+	min-height: 100%;
+	font-family: 'ElektraLightPro', sans-serif;
+}
+body {
+	color: $text-color;
+	background: #fff;
+	font-size: 14px;
+	margin-bottom: $footer_height;
+}
+a { color: $link-color; }
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+.container {
+	position: relative;
+	width: 1020px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.content {
+	position: relative;
+	margin-left: $margin-content;
+}
+
+/* clearfix */
+.cf:before, .cf:after,
+.row:before, .row:after {
+	content: " "; display: table;
+}
+.cf:after, .row:after { clear: both; }
