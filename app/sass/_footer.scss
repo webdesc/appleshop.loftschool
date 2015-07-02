@@ -1,0 +1,40 @@
+.footer {
+	position: absolute;
+	height: $footer_height;
+	width: 100%;
+	bottom: 0;
+	background: url('../img/bg-footer.jpg');
+}
+
+.footer-logo {
+	float: left;
+	margin-top: 100px;
+}
+
+.footer-menu-wrp {
+	display: inline-block;
+	margin: 50px 0 0 110px;
+}
+.footer-menu-grid {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+}
+
+.footer-menu-grid__title {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.footer-menu-list {
+	margin: 0; padding: 0;
+}
+.footer-menu-item {
+	list-style: none;
+	padding: 0;
+	margin: 2px 0;
+	line-height: 26px;
+}
+.footer-menu-item__link {
+	color: #fff;
+}

@@ -55,7 +55,7 @@ gulp.task('wiredep', function() {
 });
 
 // запускаем локальный сервер (только после компиляции jade)
-gulp.task('server', ['jade'], function() {
+gulp.task('server', ['jade', 'sass'], function() {
   browserSync({
     notify: false,
     port: 9000,
@@ -90,12 +90,12 @@ gulp.task('clean', function() {
 });
 
 // переносим HTML, CSS, JS в папку dist
-gulp.task('useref', function() {
+gulp.task('useref', ['sass'], function() {
   var assets = useref.assets();
   return gulp.src('app/*.html')
     .pipe(assets)
     .pipe(gulpif('*.js', uglify()))
-    .pipe(gulpif('*.css', minifyCss({compability: 'ie8'})))
+    .pipe(gulpif('*.css', minifyCss({compatibility: 'ie8'})))
     .pipe(assets.restore())
     .pipe(useref())
     .pipe(gulp.dest('dist'));
