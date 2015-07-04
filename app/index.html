@@ -52,7 +52,7 @@
 					<aside class="sidebar-left">
 						<nav class="menu">
 							<ul class="menu-side">
-								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link menu-link_active">iPhone</a>
+								<li class="menu-side__item menu-side__item_subcat"><a href="#" class="menu-side__link menu-link menu-link_active">iPhone</a>
 									<ul class="menu-side__submenu">
 										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 4s</a></li>
 										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5</a></li>
@@ -61,8 +61,24 @@
 										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 6 plus</a></li>
 									</ul>
 								</li>
-								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link">iPad</a></li>
-								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link">iMac</a></li>
+								<li class="menu-side__item menu-side__item_subcat"><a href="#" class="menu-side__link menu-link">iPad</a>
+									<ul class="menu-side__submenu">
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 4s</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5s</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5s с эксклюзивным дизайном</a><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 6</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 6 plus</a></li>
+									</ul>
+								</li>
+								<li class="menu-side__item menu-side__item_subcat"><a href="#" class="menu-side__link menu-link">iMac</a>
+									<ul class="menu-side__submenu">
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 4s</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5s</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 5s с эксклюзивным дизайном</a><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 6</a></li>
+										<li class="menu-side__submenu-item"><a href="#" class="menu-side__link menu-side__link_sub menu-link">iPhone 6 plus</a></li>
+									</ul>
+								</li>
 								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link">Macbook</a></li>
 								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link">iPod</a></li>
 								<li class="menu-side__item"><a href="#" class="menu-side__link menu-link">Другое</a></li>
@@ -204,8 +220,8 @@
 							<div class="catalog-service-box catalog-service-box_bottom">
 								<div class="catalog-select-wrp">
 									<select class="catalog-select-view">
-										<option class="catalog-select-view__item">Сеткой</option>
-										<option class="catalog-select-view__item">Линиями</option>
+										<option data-view="line" value="1" class="catalog-select-view__item">Линиями</option>
+										<option data-view="grid" value="2" class="catalog-select-view__item">Сеткой</option>
 									</select>
 								</div>
 								<div class="paginator"><a href="#" class="paginator__item paginator__active">1</a><a href="#" class="paginator__item">2</a><a href="#" class="paginator__item">3</a><a href="#" class="paginator__item">4</a><a href="#" class="paginator__item">5</a><a href="#" class="paginator__item">Все</a></div>
@@ -213,8 +229,8 @@
 						</div>
 						<div class="about-shop-description">
 							<h2 class="about-shop-title">Пара слов о магазине</h2>
-							<p class="Lorem">ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
-							<p class="Cum">sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
 						</div>
 					</div>
 				</div>
@@ -252,6 +268,7 @@
 				</div>
 			</div>
 		</footer>
+		<div class="up">Наверх</div>
 		<!-- build:js js/vendor.min.js -->
 		<!-- bower:js -->
 		<script src="/bower/jquery/dist/jquery.js"></script>
