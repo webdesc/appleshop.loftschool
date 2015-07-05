@@ -110,7 +110,7 @@ gulp.task('fonts', function() {
 
 // картинки
 gulp.task('images', function() {
-  gulp.src('app/img/*')
+  gulp.src('app/img/**/*')
     .pipe(imagemin({
       progressive: true,
       interlaced: true
