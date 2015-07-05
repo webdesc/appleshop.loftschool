@@ -27,7 +27,18 @@ a {
 
 .content {
   position: relative;
-  margin-left: 250px; }
+  margin-left: 260px; }
+
+.user-content {
+  margin: 0 0 20px; }
+
+.user-content h2 {
+  font-size: 25px;
+  margin: 0 0 20px; }
+
+.user-content p {
+  line-height: 20px;
+  margin: 0 0 20px; }
 
 .up {
   display: none;
@@ -100,21 +111,22 @@ a {
   height: 240px;
   width: 100%;
   min-width: 1020px;
+  padding-top: 50px;
   bottom: 0;
   background: url("../img/bg-footer.jpg"); }
 
 .footer-logo {
   float: left;
-  margin-top: 100px; }
+  margin-top: 50px; }
 
 .footer-menu-wrp {
   display: inline-block;
-  margin: 50px 0 0 110px; }
+  margin: 0 0 0 110px; }
 
 .footer-menu-grid {
   display: inline-block;
   vertical-align: top;
-  margin-right: 50px; }
+  margin-right: 60px; }
 
 .footer-menu-grid__title {
   color: #fff;
@@ -133,6 +145,70 @@ a {
 
 .footer-menu-item__link {
   color: #fff; }
+
+.footer-right-box {
+  float: right;
+  width: 200px;
+  padding: 20px 0 0; }
+
+.download-app-list {
+  font-size: 0;
+  margin-bottom: 30px; }
+
+.download-app-items {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.download-app-item {
+  display: inline-block;
+  width: 90px;
+  height: 32px;
+  margin: 0 6px 0 0;
+  padding: 0; }
+
+.download-app-link {
+  display: block;
+  width: 90px;
+  height: 32px;
+  background: url("../img/app-download.png") no-repeat; }
+
+.download-app-link_apple {
+  background-position: 0 0; }
+
+.download-app-link_droid {
+  background-position: -95px 0; }
+
+.social-list {
+  font-size: 0;
+  margin-bottom: 20px; }
+
+.social-items {
+  list-style: none;
+  margin: 0 0 0 -3px;
+  padding: 0; }
+
+.social-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin: 0 4px 0 0;
+  padding: 0; }
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: url("../img/social.png") no-repeat; }
+
+.social-link_vk {
+  background-position: 0 0; }
+
+.social-link_fb {
+  background-position: -52px 0; }
+
+.social-link_tw {
+  background-position: -102px 0; }
 
 .menu-link {
   position: relative;
@@ -247,13 +323,47 @@ a {
 
 .catalog-service-box {
   position: absolute;
-  top: -30px;
+  top: -34px;
   right: 0;
   white-space: nowrap; }
 
 .catalog-select-wrp {
+  position: relative;
   display: inline-block;
   margin-right: 20px; }
+
+.catalog-select-view {
+  position: relative;
+  border: 1px solid #dae1eb;
+  width: 132px;
+  height: 26px;
+  -webkit-appearance: none;
+  line-height: 26px;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+  outline: none;
+  cursor: pointer;
+  background-image: url("../img/select-after.png");
+  background-position: right center;
+  background-repeat: no-repeat; }
+
+select::-ms-expand {
+  display: none; }
+
+.catalog-select-view__item {
+  color: #5c7b98;
+  height: 24px;
+  line-height: 24px;
+  background-color: transparent;
+  cursor: pointer; }
+  .catalog-select-view__item:hover {
+    color: #bed1e3;
+    background-color: transparent; }
 
 .paginator {
   display: inline-block; }
@@ -267,12 +377,16 @@ a {
   text-decoration: none;
   cursor: default; }
 
+.paginator_right {
+  float: right; }
+
 .catalog-service-box_bottom {
   top: auto;
+  left: 0;
   bottom: -30px; }
 
 .catalog-list {
-  margin: 0 0 0 10px;
+  margin: 0 0 10px;
   padding: 0;
   list-style: none; }
 
@@ -331,6 +445,3 @@ a {
     display: inline-block;
     width: 48%;
     margin: 0 0 4px; }
-
-.about-shop-description {
-  margin: 20px 0; }

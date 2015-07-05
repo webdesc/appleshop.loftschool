@@ -4,12 +4,43 @@
 }
 .catalog-service-box {
 	position: absolute;
-	top: -30px; right: 0;
+	top: -34px; right: 0;
 	white-space: nowrap;
 }
 .catalog-select-wrp {
+	position: relative;
 	display: inline-block;
 	margin-right: 20px;
+}
+.catalog-select-view {
+	position: relative;
+	border: 1px solid #dae1eb;
+	width: 132px; height: 26px;
+	-webkit-appearance: none;
+	line-height: 26px;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+	outline: none;
+	cursor: pointer;
+	background-image: url('../img/select-after.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+select::-ms-expand { display: none; }
+.catalog-select-view__item {
+	color: #5c7b98;
+	height: 24px; line-height: 24px;
+	background-color: transparent;
+	cursor: pointer;
+	&:hover {
+		color: #bed1e3;
+		background-color: transparent;
+	}
 }
 
 .paginator {
@@ -24,13 +55,15 @@
 	text-decoration: none;
 	cursor: default;
 }
+.paginator_right {
+	float: right;
+}
 .catalog-service-box_bottom {
-	top: auto;
-	bottom: -30px;
+	top: auto; left: 0; bottom: -30px;
 }
 
 .catalog-list {
-	margin: 0 0 0 10px;
+	margin: 0 0 10px;
 	padding: 0;
 	list-style: none;
 }
@@ -99,8 +132,4 @@
 		width: 48%;
 		margin: 0 0 4px;
 	}
-}
-
-.about-shop-description {
-	margin: 20px 0;
 }

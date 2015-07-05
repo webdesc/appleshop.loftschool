@@ -3,23 +3,24 @@
 	height: $footer_height;
 	width: 100%;
 	min-width: 1020px;
+	padding-top: 50px;
 	bottom: 0;
 	background: url('../img/bg-footer.jpg');
 }
 
 .footer-logo {
 	float: left;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .footer-menu-wrp {
 	display: inline-block;
-	margin: 50px 0 0 110px;
+	margin: 0 0 0 110px;
 }
 .footer-menu-grid {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 50px;
+	margin-right: 60px;
 }
 
 .footer-menu-grid__title {
@@ -39,3 +40,57 @@
 .footer-menu-item__link {
 	color: #fff;
 }
+
+.footer-right-box {
+	float: right;
+	width: 200px;
+	padding: 20px 0 0;
+}
+
+.download-app-list {
+	font-size: 0;
+	margin-bottom: 30px;
+}
+.download-app-items {
+	margin: 0; padding: 0;
+	list-style: none;
+}
+.download-app-item {
+	display: inline-block;
+	width: 90px; height: 32px;
+	margin: 0 6px 0 0; padding: 0;
+}
+.download-app-link {
+	display: block;
+	width: 90px; height: 32px;
+	background: url('../img/app-download.png') no-repeat;
+}
+.download-app-link_apple {
+	background-position: 0 0;
+}
+.download-app-link_droid {
+	background-position: -95px 0;
+}
+
+.social-list {
+	font-size: 0;
+	margin-bottom: 20px;
+}
+.social-items {
+	list-style: none;
+	margin: 0 0 0 -3px; padding: 0;
+}
+.social-item {
+	display: inline-block;
+	width: 44px; height: 44px;
+	margin: 0 4px 0 0;
+	padding: 0;
+}
+.social-link {
+	display: block;
+	width: 44px; height: 44px;
+	background: url('../img/social.png') no-repeat;
+}
+.social-link_vk { background-position: 0 0; }
+.social-link_fb { background-position: -52px 0; }
+.social-link_tw { background-position: -102px 0; }
