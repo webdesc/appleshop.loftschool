@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	up.init();
 
+	if ($('select').length) {
+		$("select").simpleSelect();
+	}
+
 	if ($('.catalog-select-view').length) {
 		viewer.init();
 	};

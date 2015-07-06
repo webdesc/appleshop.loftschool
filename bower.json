@@ -5,11 +5,13 @@
     "modernizer": "~2.8.2",
     "normalize.css": "~3.0.3",
     "jquery": "1.11",
-    "jquery.placeholder": "~0.2.4"
+    "jquery.placeholder": "~0.2.4",
+    "simple-select": "*"
   },
   "devDependencies": {
     "modernizer": "~2.8.2",
     "jquery": "1.11",
-    "jquery.placeholder": "~0.2.4"
+    "jquery.placeholder": "~0.2.4",
+    "simple-select": "*"
   }
 }

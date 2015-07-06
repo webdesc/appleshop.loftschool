@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -332,41 +333,10 @@ a {
   display: inline-block;
   margin-right: 20px; }
 
-.catalog-select-view {
-  position: relative;
-  border: 1px solid #dae1eb;
-  width: 132px;
-  height: 26px;
-  -webkit-appearance: none;
-  line-height: 26px;
-  /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none !important;
-  outline: none;
-  cursor: pointer;
-  background-image: url("../img/select-after.png");
-  background-position: right center;
-  background-repeat: no-repeat; }
-
-select::-ms-expand {
-  display: none; }
-
-.catalog-select-view__item {
-  color: #5c7b98;
-  height: 24px;
-  line-height: 24px;
-  background-color: transparent;
-  cursor: pointer; }
-  .catalog-select-view__item:hover {
-    color: #bed1e3;
-    background-color: transparent; }
-
 .paginator {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 8px; }
 
 .paginator__item {
   display: inline-block;
@@ -423,6 +393,7 @@ select::-ms-expand {
 .catalog-item__info-box {
   margin-left: 180px; }
 
+/* линиями */
 .catalog-list_view-line .catalog-item__defines .catalog-item_define-key {
   display: inline-block;
   margin: 0 0px 0 0; }
@@ -431,6 +402,7 @@ select::-ms-expand {
   display: inline-block;
   margin: 0 6px 0 0; }
 
+/* сеткой */
 .catalog-list_view-grid {
   margin-right: -20px; }
   .catalog-list_view-grid .catalog-item {
@@ -445,3 +417,70 @@ select::-ms-expand {
     display: inline-block;
     width: 48%;
     margin: 0 0 4px; }
+
+.selectbox {
+  display: inline-block;
+  width: 132px;
+  height: 24px; }
+  .selectbox.opened .selectbox__dropdown {
+    display: block; }
+  .selectbox .selectbox__inner {
+    position: relative; }
+  .selectbox .selectbox__display {
+    width: 132px;
+    border: 1px solid #dae1eb;
+    background: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; }
+  .selectbox .selectbox__display-title {
+    float: left;
+    width: 103px; }
+  .selectbox .selectbox__title-text {
+    font-size: 12px;
+    line-height: 24px;
+    color: #5c7b98;
+    padding-left: 11px;
+    height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .selectbox .selectbox__display-btn {
+    width: 24px;
+    float: left;
+    height: 24px;
+    background: transparent;
+    top: 0;
+    right: 0;
+    position: absolute; }
+  .selectbox .selectbox__btn-icon {
+    width: 24px;
+    height: 24px;
+    background: url("../img/select-after.png") center center no-repeat; }
+  .selectbox .selectbox__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    background: #ffffff;
+    border: 1px solid #dae1eb;
+    border-top: 0 none;
+    overflow: hidden;
+    display: none;
+    z-index: 1000; }
+    .selectbox .selectbox__dropdown .selectbox__dropdown-list {
+      margin: 0;
+      padding: 0; }
+  .selectbox .selectbox__dropdown-item.selected .selectbox__item-link {
+    color: #bed1e3; }
+  .selectbox .selectbox__item-link {
+    font-size: 12px;
+    line-height: 14px;
+    color: #686868;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    display: block; }
+    .selectbox .selectbox__item-link:hover {
+      color: #bed1e3; }
